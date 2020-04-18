@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 export class TodoItem extends Component {
+  componentWillUnmount() {
+    alert("Item about to be deleted!");
+  }
+
   render() {
     const completedStyle = {
       fontStyle: "italic",
