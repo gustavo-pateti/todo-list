@@ -7,7 +7,7 @@ import axios from "axios";
 import { v4 as uuid } from "uuid";
 
 const TodoContainer = (props) => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(null);
   const [show, setShow] = useState(false);
 
   const handleChange = (id) => {
